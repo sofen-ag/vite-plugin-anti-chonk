@@ -2,21 +2,21 @@ import { NormalizedOutputOptions, OutputBundle } from 'rollup';
 
 export interface AntiChonkConfig {
   bootstrapChunkName?: string;
-  maxBootstrapChunkSizeBytes: number;
+  maxBootstrapChunkSizeKb: number;
   additionalInstructionsMsg: string;
 }
 
 export default function antiChonk(config: AntiChonkConfig) {
   const {
     bootstrapChunkName,
-    maxBootstrapChunkSizeBytes,
+    maxBootstrapChunkSizeKb,
     additionalInstructionsMsg,
   } = config;
 
   const expectedChunkName = bootstrapChunkName ?? 'bootstrap';
 
   return {
-    name: 'enforce-bootstrap-bundle-size-limit',
+    name: 'anti-chonk',
 
     generateBundle: (
       outputOptions: NormalizedOutputOptions,
@@ -26,10 +26,10 @@ export default function antiChonk(config: AntiChonkConfig) {
         if (bundle.name === expectedChunkName && bundle.type === 'chunk') {
           const sizeBytes = new Blob([bundle.code]).size;
 
-          if (sizeBytes > maxBootstrapChunkSizeBytes * 1000) {
+          if (sizeBytes > maxBootstrapChunkSizeKb * 1000) {
             const errorMsg = `The bootstrap bundle size (${
               sizeBytes / 1000
-            }kB) exceeds limit ${maxBootstrapChunkSizeBytes}kB. ${
+            }kB) exceeds limit ${maxBootstrapChunkSizeKb}kB. ${
               additionalInstructionsMsg ?? ''
             }`;
 
