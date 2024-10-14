@@ -1,5 +1,5 @@
 {
-  "name": "typescript-npm-package-template",
+  "name": "vite-plugin-anti-chonk",
   "version": "0.0.0-development",
   "description": "A template for creating npm packages using TypeScript and VSCode",
   "main": "./lib/index.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryansonshine/typescript-npm-package-template.git"
+    "url": "git+https://github.com/sofen-ag/vite-plugin-anti-chonk"
   },
   "license": "MIT",
   "author": {
@@ -33,9 +33,9 @@
     "vite-plugin"
   ],
   "bugs": {
-    "url": "https://github.com/ryansonshine/typescript-npm-package-template/issues"
+    "url": "https://github.com/sofen-ag/vite-plugin-anti-chonk/issues"
   },
-  "homepage": "https://github.com/ryansonshine/typescript-npm-package-template#readme",
+  "homepage": "https://github.com/sofen-ag/vite-plugin-anti-chonk#readme",
   "devDependencies": {
     "@ryansonshine/commitizen": "^4.2.8",
     "@ryansonshine/cz-conventional-changelog": "^3.3.4",
