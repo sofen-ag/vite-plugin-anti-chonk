@@ -8,6 +8,8 @@ It's the chunk that's loaded at the very beginning. If you do code splitting pro
 ### Why Should we enforce size limit on the bootstrap chunk?
 The size of this chunk has an impact of your page app's page load performance. Especially because it's the first js chunk to get fetched by the browser when a user visits your site. 
 
+### 
+
 # Usage
 Add the following code in the plugins array of your vite config file.
 [See vite plugin docs](https://v2.vitejs.dev/guide/api-plugin.html#plugins-config)
@@ -33,4 +35,3 @@ This repo is extended from [ryansonshine/typescript-npm-package-template](https:
 
 # Anti Chonk Name Origin
 ![chonk-chart](./docs/img/chonk-chart.jpg)
-
