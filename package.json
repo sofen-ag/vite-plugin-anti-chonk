@@ -22,9 +22,9 @@
   },
   "license": "MIT",
   "author": {
-    "name": "Ryan Sonshine",
-    "email": "ryansonshine@users.noreply.github.com",
-    "url": "https://github.com/ryansonshine"
+    "name": "Sofen",
+    "email": "",
+    "url": "https://github.com/sofen-ag"
   },
   "engines": {
     "node": ">=12.0"
