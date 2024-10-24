@@ -45,3 +45,4 @@ This repo is extended from [ryansonshine/typescript-npm-package-template](https:
 
 # Package Name Origin
 ![chonk-chart](./docs/img/chonk-chart.jpg)
+
