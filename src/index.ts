@@ -1,3 +1,5 @@
+import { Blob } from 'node:buffer';
+
 import { NormalizedOutputOptions, OutputBundle } from 'rollup';
 
 export interface AntiChonkConfig {
