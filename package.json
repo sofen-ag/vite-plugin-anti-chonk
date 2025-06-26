@@ -27,7 +27,8 @@
     "url": "https://github.com/sofen-ag"
   },
   "engines": {
-    "node": ">=16.0"
+    "node": ">=16.0",
+    "pnpm": ">=10.0.0"
   },
   "keywords": [
     "vite-plugin"
@@ -112,5 +113,6 @@
   },
   "peerDependencies": {
     "rollup": "^4.24.0"
-  }
+  },
+  "packageManager": "pnpm@10.11.0"
 }
