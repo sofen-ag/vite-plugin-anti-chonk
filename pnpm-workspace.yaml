@@ -1,0 +1,10 @@
+packages:
+  - '.'
+
+hoist: true
+
+publicHoistPattern:
+  - '@types*'
+  - '@testing-library/jest-dom'
+  - '@vitest/expect'
+  - '@jest/expect'
